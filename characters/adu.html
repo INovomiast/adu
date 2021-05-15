@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADÚ || Descripción del Personaje</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Mukta', sans-serif;
+            color: white;
+        }
+        body{
+            background: #ED213A;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+        .char_name{
+            font-size: 150px;
+            text-decoration: underline white 2px;
+        }
+        .char_rol{
+            margin-top: -50px;
+            text-decoration: overline white 2px;
+        }
+        .def_box{
+            text-align: center;
+            background-color: rgb(0, 0, 0, 0.5);
+            width: 40%;
+            height: 100px;
+            bottom: 0;
+            position: fixed;
+            margin-left: 500px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Esta página servira como plantilla para las demas descripciones -->
+    <center>
+        <!-- Nombre del personaje -->
+        <h1 class="char_name">ADÚ</h1>
+        <h2 class="char_rol">Personaje Principal</h2>
+        <br>
+        <br>
+        <h2 class="char_desc">
+            Adú, es el personaje principal el cual a lo largo de la pelicula <br>
+            pierde, gana y al final consigue su meta, este es un niño de 6 años el cual le pasan diferentes <br>
+            tragedias, como la perdida de su hermana: <a href="./alika.html">Alika</a> al caerse del lugar donde se guarda <br>
+            la rueda del avión que "supuestamente" los llevan a Paris. O la perdida de su madre por culpa de los rebeldes, los cuales<br>
+            abordan su casa para secuestrarlos, pero al final ellos escapan (<a href="./alika.html">Alika</a> y Adu) <br>
+            <br>
+            Este conocera a <a href="./massar.html">Massar</a> el cual sera un gran compañero para el, el cual poco a poco ira contando la verdad <br>
+            y nos daremos cuenta poco a poco lo que se referia a <span id="definition" style="color:rgb(9, 255, 0)">*Le Magic*</span>, este el unico que <br>
+            consigue llegar a España.
+        </h2>
+        <br>
+        <br>
+        <img src="https://www.barfutura.com/wp-content/uploads/2018/01/ADU_PERSONAJES_MOUSTAPHA_AF_WEBBAR.jpg" alt="" style="height: 400px;">
+    </center>
+    <center>
+        <div class="def_box" id="defn_box">
+            <h3 id="def_word">Definicion o significado de: </h3>
+            <p id="def_word_desc">
+    
+            </p>
+        </div>
+    </center>
+    <script>
+        const definition_box = document.getElementById('defn_box');
+        const definition_text = document.getElementById('definition');
+        const definition_word = document.getElementById('def_word');
+        const definition_word_desc = document.getElementById('def_word_desc')
+
+        definition_text.onmouseover = function(){
+            definition_box.style.display = 'block';
+            definition_word.innerText = "Definición o significado de: " + definition_text.innerText;
+            if(definition_text.innerText = "*Le Magic*"){
+            }
+        }
+        definition_word_desc.innerText = "Le magic, hace referencia a que massar, vendia su cuerpo" + '\n' + "a cambio de dinero para poder sobrevivir.";
+        definition_box.onscroll = function(){
+            definition_box.style.display = 'none';
+        }
+
+    </script>
+</body>
+</html>
