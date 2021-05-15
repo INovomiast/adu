@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gonzalo || Descripción del Personaje</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Mukta', sans-serif;
+            color: white;
+        }
+        body{
+            background: #ED213A;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+        .char_name{
+            font-size: 150px;
+            text-decoration: underline white 2px;
+        }
+        .char_rol{
+            margin-top: -50px;
+            text-decoration: overline white 2px;
+        }
+        .def_box{
+            text-align: center;
+            background-color: rgb(0, 0, 0, 0.5);
+            width: 40%;
+            height: 100px;
+            bottom: 0;
+            position: fixed;
+            margin-left: 500px;
+            display: none;
+        }
+        img{
+            height: 350px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Esta página servira como plantilla para las demas descripciones -->
+    <center>
+        <!-- Nombre del personaje -->
+        <h1 class="char_name">Gonzalo</h1>
+        <h2 class="char_rol">El cuidador de Elefantes</h2>
+        <br>
+        <br>
+        <h2 class="char_desc">
+            Gonzalo, o más conocido como el cuida elefantes, esta en Africa para proteger a los elefantes <br>
+            de los rebeldes que los matan y le quitan los cuernos. Aparte tambien desarrollando el papel del <br>
+            padre de <a href="./sandra.html">Sandra</a>, la cual trataremos en su pagina de personaje. <br>
+            Este tiene problemas con casi todo el mundo con el que trabaja y tambien querra conseguir estabilizar <br>
+            la relación padre e hija.
+        </h2>
+        <br>
+        <br>
+        <img src="https://album.mediaset.es/eimg/2020/01/24/EQpQBtbCt3vI8gGMlY9v92.jpg" alt="">
+    </center>
+    <center>
+        <div class="def_box" id="defn_box">
+            <h3 id="def_word">Definicion o significado de: </h3>
+            <p id="def_word_desc">
+    
+            </p>
+        </div>
+    </center>
+    <script>
+        const definition_box = document.getElementById('defn_box');
+        const definition_text = document.getElementById('definition');
+        const definition_word = document.getElementById('def_word');
+        const definition_word_desc = document.getElementById('def_word_desc')
+
+        definition_text.onmouseover = function(){
+            definition_box.style.display = 'block';
+            definition_word.innerText = "Definición o significado de: " + definition_text.innerText;
+            if(definition_text.innerText = "*Le Magic*"){
+            }
+        }
+        definition_word_desc.innerText = "Le magic, hace referencia a que massar, vendia su cuerpo" + '\n' + "a cambio de dinero para poder sobrevivir.";
+        definition_box.onmouseleave = function(){
+            definition_box.style.display = 'none';
+        }
+
+    </script>
+</body>
+</html>
