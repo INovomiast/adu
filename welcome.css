@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body, html{
+    margin: 0;
+    background: #ED213A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+*{
+}
+
+.title{
+    text-align: center;
+}
+
+
+.tlt{
+    height: 300px;
+    margin-left: 380px;
+    margin-top: 25px;
+}
+
+.stlt{
+    color: white;
+    font-size: 30px;
+    font-family: 'Itim', cursive;
+    background-color: rgb(0, 0, 0, 0.7);
+    margin-top: -150px;
+    margin-top: 100px;
+    
+}
+
+.see_more{
+    width: 250px;
+    height: 50px;
+    border-radius: 24px;
+    border: black solid 2px;
+    color: black;
+    text-decoration: transparent underline;
+    font-size: 15px;
+    transition: border-color 1s, background-color 1s, color 1s, text-decoration-color 1s;
+}
+
+.see_more:hover{
+    background-color: rgb(0, 110, 255);
+    color: white;
+    border-color: rgb(0, 250, 0);
+    text-decoration-color: white;
+    text-decoration-line: 2px;
+}
